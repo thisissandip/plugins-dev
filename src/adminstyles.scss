@@ -1,0 +1,13 @@
+$activebackground: white;
+$Inactivebackground: rgb(220, 220, 220);
+$OFFbg: grey;
+$ONbg: #007cba;
+$circleColor: white;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@import './scss/dashboard.scss';

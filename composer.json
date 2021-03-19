@@ -1,0 +1,18 @@
+{
+	"name": "sandip/sandip-plugin",
+	"description": "Sandip Plugin Composer",
+	"license": "GPL",
+	"authors": [
+		{
+			"name": "thisissandip",
+			"email": "thisissandipmondal@gmail.com"
+		}
+	],
+	"minimum-stability": "dev",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Inc\\": "./inc"
+		}
+	}
+}

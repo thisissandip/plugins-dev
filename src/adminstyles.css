@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dashboard-container-box {
+  padding-right: 20px;
+}
+
+.dashboard-container-box .dashboard-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard-container-box .dashboard-menu .menu-item {
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 3px;
+  background-color: gainsboro;
+  text-decoration: none;
+}
+
+.dashboard-container-box .dashboard-menu .menu-item:first-child {
+  margin-left: 0px;
+}
+
+.dashboard-container-box .dashboard-menu .active {
+  border-bottom: 0px;
+  background-color: white;
+}
+
+.dashboard-container-box .dashboard-wrapper {
+  position: relative;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box {
+  display: none;
+  width: 100%;
+  height: 600px;
+  padding: 20px 15px;
+  background-color: white;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box .plugin-row input[type='checkbox'] {
+  display: none;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box .plugin-row td .slider-bg {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box .plugin-row td .slider-bg .slider-circle {
+  position: absolute;
+  left: 2px;
+  z-index: 2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: 0.2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box input[type='checkbox']:checked + .slider-bg {
+  background-color: #007cba;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box input[type='checkbox']:checked + .slider-bg > .slider-circle {
+  left: 28px;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box .all-cpt-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box .all-cpt-table tr > th,
+.dashboard-container-box .dashboard-wrapper .dash-white-box .all-cpt-table td {
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box .all-cpt-table tr > th {
+  background-color: silver;
+}
+
+.dashboard-container-box .dashboard-wrapper .active {
+  display: block;
+}
+/*# sourceMappingURL=adminstyles.css.map */
