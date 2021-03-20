@@ -8,7 +8,6 @@
 <ul class="dashboard-menu">
     <li > <a class="menu-item <?php echo !isset($_POST["edit_post"]) ? "active" : "" ?>" href="#sandip-allcpt">All Custom Post Types</a> </li>
     <li ><a class="menu-item <?php echo isset($_POST["edit_post"]) ? "active" : "" ?>" href="#sandip-addcpt"> <?php echo isset($_POST["edit_post"]) ? "Edit" : "Add New" ?> Custom Post Type</a></li>
-    <li ><a class="menu-item" href="#sandip-exportcpt">Export</a></li>
 </ul>
 
 <div class="dashboard-wrapper">
@@ -79,9 +78,6 @@
        ?>
     </div>
 
-    <div class="dash-white-box" id="sandip-exportcpt">
-        Export CPT
-    </div>
 
     
 </div>

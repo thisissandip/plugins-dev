@@ -57,7 +57,7 @@ class CPTController {
 				'label'                 => $cpt['singular_name'],
 				'description'           => $cpt['plural_name'] . 'Custom Post Type',
 				'supports'              => array( 'title', 'editor', 'thumbnail' ),
-				'taxonomies'            => array( 'category', 'post_tag' ),
+				'taxonomies'            => array(),
 				'hierarchical'          => false,
 				'public'                => isset($cpt['is_public']) ?: false,
 				'show_ui'               => true,

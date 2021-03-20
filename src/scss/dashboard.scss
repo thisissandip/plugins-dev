@@ -72,6 +72,10 @@
 					border-collapse: collapse;
 					border: 1px solid grey;
 					padding: 5px;
+					margin-bottom: 10px;
+					.mb-10 {
+						margin-bottom: 10px;
+					}
 				}
 				tr > th {
 					background-color: silver;

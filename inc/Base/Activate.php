@@ -15,5 +15,9 @@ class Activate{
         if(!get_option( "all_cpts")){
             update_option( "all_cpts", $default);
         }
+
+        if(!get_option( "all_taxonomy")){
+            update_option( "all_taxonomy", $default);
+        }
     }
 }

@@ -6,6 +6,7 @@ namespace Inc\Pages;
 
 use \Inc\Api\SettingsAPI;
 use \Inc\Api\SubSettings\CPTSettings;
+use \Inc\Api\SubSettings\TAXSettings;
 use \Inc\Base\BaseController;
 
 class AdminDashboard extends BaseController{
@@ -41,7 +42,6 @@ class AdminDashboard extends BaseController{
                         $menu_slug = $key , $function = array($this, "sandip_cpt_template"), 
                         $position = null ); 
                         $this->settingsAPI = new CPTSettings();
-                        
                         break;
                         
                     case "taxonomy_manager":
@@ -49,6 +49,7 @@ class AdminDashboard extends BaseController{
                         $menu_title = "Taxonomy Manager", $capability= "manage_options",
                         $menu_slug = $key , $function = array($this, "sandip_taxonomy_template"), 
                         $position = null ); 
+                        new TAXSettings();
                         break;
 
                     case "media_widget":
@@ -78,11 +79,11 @@ class AdminDashboard extends BaseController{
     }
 
     public function sandip_cpt_template(){
-        require $this->pluginPATH. "templates/SandipCPT.php";
+        require $this->pluginPATH. "templates/CPTtemplate.php";
     }
 
     public function sandip_taxonomy_template(){
-        require $this->pluginPATH. "templates/SandipTAXONOMY.php";
+        require $this->pluginPATH. "templates/TAXONOMYtemplate.php";
     }
 
     public function sandip_media_template(){

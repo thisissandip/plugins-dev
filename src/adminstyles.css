@@ -91,6 +91,12 @@
   border-collapse: collapse;
   border: 1px solid grey;
   padding: 5px;
+  margin-bottom: 10px;
+}
+
+.dashboard-container-box .dashboard-wrapper .dash-white-box .all-cpt-table tr > th .mb-10,
+.dashboard-container-box .dashboard-wrapper .dash-white-box .all-cpt-table td .mb-10 {
+  margin-bottom: 10px;
 }
 
 .dashboard-container-box .dashboard-wrapper .dash-white-box .all-cpt-table tr > th {

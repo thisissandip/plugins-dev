@@ -12,6 +12,7 @@ final class Init{
             Base\Enqueue:: class,
             Pages\AdminDashboard:: class,
             Base\CPTController::class,
+            Base\TAXController::class,
         ];
     }
 
