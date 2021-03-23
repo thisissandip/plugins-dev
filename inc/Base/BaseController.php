@@ -20,7 +20,7 @@ class BaseController{
             "cpt_manager" => "Activate CPT Manager",
             "taxonomy_manager" => "Activate Taxonomy",
             "media_widget" => "Activate Media Widget",
-            "gallery_manager" => "Activate Gallery Manager",
+            "embed_widget" => "Activate Embed Widget",
         );
     }
 }

@@ -14,6 +14,7 @@ final class Init{
             Base\CPTController::class,
             Base\TAXController::class,
             Base\MediaController::class,
+            Base\EmbedController::class,
         ];
     }
 

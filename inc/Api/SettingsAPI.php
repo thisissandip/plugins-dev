@@ -16,8 +16,6 @@ class SettingsAPI extends BaseController {
         }
         $this->AddSettingSection()->AddSettingFields();
         return $this;
-
-        
     }
 
     public function AddSettingSection(){

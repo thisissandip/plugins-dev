@@ -31,7 +31,7 @@ class AdminDashboard extends BaseController{
         array($this, "sandip_dash_template"), $icon_url = "", $position = null );
 
 
-        /* Check all the subplugins, Check If they are activated, If yes then add submenu Page */
+        /* Check all the subplugins, Check If they are activated, If yes then add submenu Page and Intialise the Settings Fields */
             foreach($this->pluginsmanager as $key=>$value){
                $this->checked = get_option( $key );
     
@@ -53,19 +53,8 @@ class AdminDashboard extends BaseController{
                         new TAXSettings();
                         break;
 
-                    case "media_widget":
-                        add_submenu_page( $parent_slug = "sandip-plugin", $page_title = $value, 
-                        $menu_title = "Media Manager", $capability= "manage_options",
-                        $menu_slug = $key , $function = array($this, "sandip_media_template"), 
-                        $position = null ); 
-
-                        break;
-                        
-                    case "gallery_manager":
-                        add_submenu_page( $parent_slug = "sandip-plugin", $page_title = $value, 
-                        $menu_title = "Gallery Manager", $capability= "manage_options",
-                        $menu_slug = $key , $function = array($this, "sandip_gallery_template"), 
-                        $position = null ); 
+                    case "media_widget":                       
+                    case "embed_widget":
                         break;
 
                     default:
