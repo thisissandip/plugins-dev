@@ -13,6 +13,7 @@ final class Init{
             Pages\AdminDashboard:: class,
             Base\CPTController::class,
             Base\TAXController::class,
+            Base\MediaController::class,
         ];
     }
 

@@ -175,8 +175,6 @@ class TAXSettings extends BaseController {
             </span> 
         </label>
         <div style="display: inline-block; "  >'. strtoupper($posttype) .'</div>
-
-     
          <br>';
         }
     }

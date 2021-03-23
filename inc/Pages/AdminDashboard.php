@@ -5,6 +5,7 @@
 namespace Inc\Pages;
 
 use \Inc\Api\SettingsAPI;
+use \Inc\Api\MediaWidgetAPI;
 use \Inc\Api\SubSettings\CPTSettings;
 use \Inc\Api\SubSettings\TAXSettings;
 use \Inc\Base\BaseController;
@@ -57,6 +58,7 @@ class AdminDashboard extends BaseController{
                         $menu_title = "Media Manager", $capability= "manage_options",
                         $menu_slug = $key , $function = array($this, "sandip_media_template"), 
                         $position = null ); 
+
                         break;
                         
                     case "gallery_manager":

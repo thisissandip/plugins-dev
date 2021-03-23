@@ -13,6 +13,8 @@ class Enqueue extends BaseController{
     }
 
     function EnqueueScript(){
+        wp_enqueue_script( "media-upload" );
+        wp_enqueue_media();
         wp_enqueue_style( "sandip_plugin_adminstyle", $this->pluginURL."src/adminstyles.css" );
         wp_enqueue_script( "sandip_plugin_adminscript", $this->pluginURL."src/adminscripts.js", $deps = array(), $ver="1.0", $in_footer=true );
     }
