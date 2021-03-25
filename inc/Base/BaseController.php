@@ -21,6 +21,7 @@ class BaseController{
             "taxonomy_manager" => "Activate Taxonomy",
             "media_widget" => "Activate Media Widget",
             "embed_widget" => "Activate Embed Widget",
+            "testimonial_manager" => "Activate Testimonial Manager",
         );
     }
 }

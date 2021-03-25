@@ -44,7 +44,7 @@ class SettingsAPI extends BaseController {
 
 
     public function pluginsmanager_sections_display(){
-        echo "<div>Manage Your Settings</div>";
+        echo "<div>Manage Your Plugins</div>";
     }
 
     public function pluginsmanager_checkboxfield($args){

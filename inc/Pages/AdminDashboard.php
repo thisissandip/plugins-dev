@@ -56,7 +56,11 @@ class AdminDashboard extends BaseController{
                     case "media_widget":                       
                     case "embed_widget":
                         break;
-
+                    case "testimonial_manager":
+                        add_submenu_page( $parent_slug = "sandip-plugin", $page_title = $value, 
+                        $menu_title = "Testimonial Manager", $capability= "manage_options",
+                        $menu_slug = $key , $function = array($this, "sandip_testimonial_template"), 
+                        $position = null ); 
                     default:
                         break;
                 }
@@ -77,11 +81,7 @@ class AdminDashboard extends BaseController{
         require $this->pluginPATH. "templates/TAXONOMYtemplate.php";
     }
 
-    public function sandip_media_template(){
-        require $this->pluginPATH. "templates/SandipMEDIA.php";
-    }
-
-    public function sandip_gallery_template(){
-        require $this->pluginPATH. "templates/SandipGALLERY.php";
+    public function sandip_testimonial_template(){
+        require $this->pluginPATH. "templates/TESTIMONIALtemplate.php";
     }
 }
