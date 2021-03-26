@@ -55,7 +55,7 @@ class AuthController extends BaseController{
         This is return a boolean according to username and password passed 
         second arg true means save a cookie and remember this username
         */
-        $user_sign_in = wp_signon( $info, true );
+        $user_sign_in = wp_signon( $info );
 
         if ( is_wp_error( $user_sign_in) ) {
 			echo json_encode(
