@@ -22,6 +22,8 @@ class BaseController{
             "media_widget" => "Activate Media Widget",
             "embed_widget" => "Activate Embed Widget",
             "testimonial_manager" => "Activate Testimonial Manager",
+            "front_login" => "Activate Front Login",
+            "custom_template" => "Activate Custom Template"
         );
     }
 }
