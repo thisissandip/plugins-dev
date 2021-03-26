@@ -16,8 +16,8 @@ final class Init{
             Base\MediaController::class,
             Base\EmbedController::class,
             Base\TestimonialController::class,
-            Base\FrontLoginController::class,
-            Base\CustomTemplateController::class
+            Base\AuthController::class,
+            Base\CustomPageTemplateController::class
         ];
     }
 

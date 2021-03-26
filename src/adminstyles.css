@@ -190,4 +190,59 @@
   min-width: 100%;
   text-align: center;
 }
+
+.container {
+  width: 100%;
+}
+
+.container .login-show {
+  position: absolute;
+  padding: 10px 20px;
+  right: 40px;
+  top: 20px;
+  color: white;
+  background: #23282d;
+  outline: none;
+  border: none;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.container #sandip-plugin-auth-form {
+  position: absolute;
+  top: 2rem;
+  right: -100%;
+  padding: 30px;
+  background-color: white;
+  -webkit-transition: 0.4s right ease;
+  transition: 0.4s right ease;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container #sandip-plugin-auth-form input {
+  width: 100%;
+}
+
+.container #sandip-plugin-auth-form .close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.container #sandip-plugin-auth-form .login-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  background: #23282d;
+  outline: none;
+  border: none;
+}
+
+.container #sandip-plugin-auth-form small {
+  color: red;
+  text-align: center;
+}
 /*# sourceMappingURL=adminstyles.css.map */

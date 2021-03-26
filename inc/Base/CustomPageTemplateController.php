@@ -4,7 +4,7 @@ namespace Inc\Base;
 
 use \Inc\Base\BaseController;
 
-class CustomTemplateController extends BaseController{
+class CustomPageTemplateController extends BaseController{
 
     public $isActivated;
 

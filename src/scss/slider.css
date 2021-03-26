@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=slider.css.map */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider-wrapper .arrow {
+  cursor: pointer;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+.slider-wrapper .arrow-left {
+  left: -30px;
+}
+
+.slider-wrapper .arrow-right {
+  right: -30px;
+}
+
+.slider-wrapper .slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper .slider-container .slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.slider-wrapper .slider-container .slider .single-slide-container {
+  display: inline-block;
+  min-width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=slider.css.map */

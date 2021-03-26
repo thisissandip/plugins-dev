@@ -1,0 +1,46 @@
+.container {
+	width: 100%;
+	.login-show {
+		position: absolute;
+		padding: 10px 20px;
+		right: 40px;
+		top: 20px;
+		color: white;
+		background: $themeColor;
+		outline: none;
+		border: none;
+		transition: 0.4s all ease;
+	}
+
+	#sandip-plugin-auth-form {
+		position: absolute;
+		top: 2rem;
+		right: -100%;
+		padding: 30px;
+		background-color: white;
+		transition: 0.4s right ease;
+		box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.3);
+		input {
+			width: 100%;
+		}
+		.close-btn {
+			cursor: pointer;
+			position: absolute;
+			top: 10px;
+			right: 20px;
+		}
+		.login-btn {
+			margin-top: 20px;
+			width: 100%;
+			padding: 10px 0;
+			color: white;
+			background: $themeColor;
+			outline: none;
+			border: none;
+		}
+		small {
+			color: red;
+			text-align: center;
+		}
+	}
+}
