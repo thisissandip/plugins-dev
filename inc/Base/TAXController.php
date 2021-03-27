@@ -39,6 +39,7 @@ class TAXController {
 				'show_ui'           => true,
 				'show_admin_column' => true,
 				'query_var'         => true,
+				"show_in_rest"		=> true,
 				'rewrite'           => array( 'slug' => $taxonomy['tax_id'] ),
 				'objects'           => isset($taxonomy['objects']) ? array_keys($taxonomy['objects'])  : null
 			);
